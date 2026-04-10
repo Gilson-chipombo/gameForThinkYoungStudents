@@ -2,19 +2,24 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Reaction Game</title>
+  <title>Jogo de Reação - ThinkYoung</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Clique no Quadrado</h1>
-  <p>Pontos: <span id="score">0</span></p>
+  <div class="container">
+    <h1>Clique no Quadrado</h1>
+    <div class="score-container">
+      <p>Pontos: <span id="score">0</span>/10</p>
+    </div>
 
-  <div id="gameArea">
-    <div id="box"></div>
+    <div id="gameArea">
+      <div id="box"></div>
+    </div>
+
+    <button onclick="startGame()" class="btn-start">Start</button>
   </div>
-
-  <button onclick="startGame()">Começar</button>
 
   <script src="script.js"></script>
 </body>
