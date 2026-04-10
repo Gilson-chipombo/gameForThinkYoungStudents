@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background-color: #c5a8a8;
+}
+
+#gameArea {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 20px auto;
+  position: relative;
+}
+
+#box {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+
+.confetti {
+  position: fixed;
+  font-size: 30px;
+  pointer-events: none;
+  animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
